@@ -124,4 +124,3 @@ Proyecto desarrollado como Trabajo Final del
 
 ---
 
-✅ **Listo para usar** como `README.md`. Si vas a incluir imágenes, diagramas o *badges*, puedes agregarlos en esta sección superior o bajo cada bloque relevante.
