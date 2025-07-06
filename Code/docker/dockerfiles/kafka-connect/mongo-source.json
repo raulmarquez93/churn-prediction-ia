@@ -1,0 +1,22 @@
+{
+  "name": "mongo-source-connector",
+  "config": {
+    "value.converter.schemas.enable": "false",
+    "key.converter.schemas.enable": "false",
+    "name": "mongo-source-connector",
+    "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
+    "tasks.max": "1",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "connection.uri": "mongodb://root:root@mongodb:27017/?directConnection=true",
+    "database": "weather_data_db",
+    "collection": "weather_data",
+    "pipeline": "[{\"$project\":{\"fullDocument._id\":0}}]",
+    "publish.full.document.only": "true",
+    "topic.prefix": "weather-data-mongo",
+    "startup.mode": "copy_existing"
+    
+    
+    
+  }
+}
